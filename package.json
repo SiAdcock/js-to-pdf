@@ -4,7 +4,8 @@
   "description": "App that generates PDF for personalised printable items",
   "main": "index.js",
   "scripts": {
-    "start": "env DEBUG=pdf:* node index.js",
+    "start": "node index.js",
+    "dev": "env DEBUG=pdf:* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node node_modules/eslint/bin/eslint ./**/*.js"
   },
