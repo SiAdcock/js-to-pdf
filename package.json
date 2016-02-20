@@ -1,15 +1,18 @@
 {
   "name": "js-to-pdf",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "App that generates PDF for personalised printable items",
   "main": "index.js",
   "scripts": {
+    "start": "env DEBUG=pdf:* node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node node_modules/eslint/bin/eslint ./**/*.js"
   },
-  "author": "",
+  "author": "Simon Adcock @SiAdcock",
   "license": "ISC",
   "dependencies": {
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
     "pdfkit": "^0.7.2"
   },
   "devDependencies": {
